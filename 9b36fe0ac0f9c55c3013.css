@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gothic A1', sans-serif;;
+    font-size: 14px;
+}
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+/* Header styles */
+
+.header__top{
+    background-color: #5d4294;
+    padding: 5px 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+}
+
+.header__top h2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 5px 0 0 0;
+    margin-left: 14%;
+}
+
+.header__top img{
+    width: 15%;
+}
+
+.header__top button{
+    color: #ffffff;
+}
+
+.header__nav{
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.header__figure img {
+    width: auto;
+    height: 100px;
+    margin: 5% 0 0 20%
+}
+
+.header__figure:hover {
+    cursor: pointer;
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    justify-content: center;
+}
+
+.search-bar input{
+    border: 1px solid #6f6f6f;
+    border-radius: 10px 0px 0px 10px;
+    width: 60%;
+    height: 48px;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #a3a3a3;
+    padding: 15px;
+}
+
+.search-bar .actions{
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar .actions button{
+    height: 48px;
+    background-color: #ffa53b;
+    color: #fff;
+    border: 1px solid #ffa53b;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 12px 20px;
+}
+
+.header__buttons{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__links{
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: row;
+    gap: 35px;
+    margin-right: 4%;
+    text-align: center;
+    align-items: center;
+}
+
+.header__links:hover{
+    color: #ffa53b;
+}
+
+/* Banner styles */
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    background-size: cover;
+}
+
+.banner__item-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2; 
+    width: 65%;
+    height: 90%;
+    margin-left: 11%;
+}
+
+.banner__item-2 {
+    grid-column: 3;
+    grid-row: 1; 
+    width: 100%;
+    height: 80%;
+    position: relative;
+    right: 30%;
+}
+
+.banner__item-3 {
+    grid-column: 3;
+    grid-row: 2; 
+    width: 100%;
+    height: 85%;
+    position: relative;
+    right: 30%;
+    top: -9%;
+}
+
+.banner__item-4 {
+    grid-column: 1;
+    grid-row: 3; 
+    width: 95%;
+    height: 85%;
+    position: relative;
+    left: 3%;
+    margin-top: -10%;
+}
+
+.banner__item-5 {
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: -10%; 
+    margin-left: 6%;
+    height: 85%;
+}
+
+.banner__item-6 {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 2;
+    width: 97%;
+    height: 82%;
+    margin-top: -10%;
+}
+
+/* main section styles */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-top: -5%;
+    margin-left: 1%;
+    gap: 25px;
+}
+
+.separador{
+    color: #000000;
+    border: 2px solid black; 
+} 
+
+.main .nav-link {
+    font-size: 1.1rem;
+}
+.main .nav-link:hover {
+    color: #ffffff;
+    text-decoration:underline;
+}
+
+.flex-column img{
+    width: 10%;
+}
+
+/* footer styles */
+
+.footer{
+    text-align: center;
+    color: #ffffff;
+    background-color: #5d4294;
+    padding: 20px 0 0 0;
+    width: 100vw;
+}
+
+.nav-link {
+    color: #000000;
+}
+
+.footer .nav-link {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.footer .nav-link:hover {
+    color: #ffa53b;
+}
+
+
+.main__footer-logo img{
+    width: auto;
+    height: 80px;
+    margin-top: 5%;
+}
+
+.footer__contact-line{
+    border-top: 2px dashed grey;
+    justify-content: center;
+}
+
+.bottom__payment-redes img{
+    width: 7%;
+    height: auto;
+    color: #ffffff;
+}
+
+
+/* responsive styles for mobile devices */
+
+@media screen and (max-width: 768px) {
+    .header__top{
+        width: 102vw;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .col-10{
+        margin-left: -200px;
+    }
+
+    .header__top h2{
+        font-size: 1rem;
+        padding: 0px;
+        margin-left: 4%;
+    }
+    
+    .header__top-spanish{
+        margin-left: -150px;
+        display: flex;
+    }
+
+    .header__nav{
+        display: flex;
+        padding: 5px 0;
+    }
+    
+    .header__figure img {
+        height: 60px;
+        margin: 10% 0 0 80%;
+    }
+
+    .header__links{
+        margin-left: 15%;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .main .nav-link {
+        font-size: 0.8rem;
+    }
+
+    .flex-column img{
+        width: 15%;
+    }
+
+    .footer__contact h5{
+        font-size: 1rem;
+    }
+    .bottom__payment-redes img{
+        width: 12%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .header__top{
+        width: 145vw;
+    }
+    
+    .header__top h2{
+        font-size: 1rem;
+        padding: 0px;
+        margin-left: 4%;
+    }
+    
+    .header__top-spanish{
+        margin-left: -50px;
+    }
+    
+    .header__figure img {
+        height: 50px;
+        margin: 10% 0 0 40%;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .banner{
+        width: 145vw;
+    }
+
+    .main .nav-link {
+        font-size: 0.7rem;
+    }
+
+    .main{
+        width: 148vw;
+        padding: 0%;
+    }
+    .main h5{
+        font-size: 0.8rem;
+    }
+
+    .flex-column img{
+        width: 12%;
+    }
+
+    .footer{
+        width: 145vw;
+    }
+
+    .footer h4{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .footer p{
+        font-size: 0.7rem;
+    }
+
+    .footer .nav-link {
+        font-size: 0.7rem;
+    }
+
+    .footer__contact h5{
+        font-size: 0.7rem;
+    }
+
+    .main__footer-logo img{
+        width: auto;
+        height: 50px;
+        margin-top: 2%;
+    }
+    
+    .bottom__payment-redes img{
+        width: 15%;
+    }
+}
